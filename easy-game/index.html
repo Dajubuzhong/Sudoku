@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku - Easy Game</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="easy-game.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="../index.html" class="navbar-title">Sudoku</a>
+            <ul class="navbar-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../selection/index.html">Selection</a></li>
+                <li><a href="../hard-game/index.html">Hard Game</a></li>
+                <li><a href="../easy-game/index.html" class="active">Easy Game</a></li>
+                <li><a href="../rules/index.html">Rules</a></li>
+                <li><a href="../high-scores/index.html">High Scores</a></li>
+                <li><a href="../login/index.html">Login</a></li>
+                <li><a href="../register/index.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="game-container">
+                <div class="game-header">
+                    <h1>Easy Game (6×6)</h1>
+                    <div class="timer-display">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <span>01:23</span>
+                    </div>
+                </div>
+
+                <div class="sudoku-grid">
+
+                    <div class="sudoku-cell prefilled"><input type="text" value="1" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="3" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="6" readonly aria-label="Prefilled cell"></div>
+
+
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="5" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="2" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+
+
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="2" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="5" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+
+
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="4" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="1" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+
+
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="6" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="2" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+
+
+                    <div class="sudoku-cell prefilled"><input type="text" value="5" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="3" readonly aria-label="Prefilled cell"></div>
+                    <div class="sudoku-cell"><input type="text" maxlength="1" aria-label="Sudoku cell"></div>
+                    <div class="sudoku-cell prefilled"><input type="text" value="1" readonly aria-label="Prefilled cell"></div>
+                </div>
+
+                <div class="game-controls">
+                    <button>Check</button>
+                    <button>Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

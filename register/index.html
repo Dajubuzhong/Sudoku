@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku - Register</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="../index.html" class="navbar-title">Sudoku</a>
+            <ul class="navbar-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../selection/index.html">Selection</a></li>
+                <li><a href="../hard-game/index.html">Hard Game</a></li>
+                <li><a href="../easy-game/index.html">Easy Game</a></li>
+                <li><a href="../rules/index.html">Rules</a></li>
+                <li><a href="../high-scores/index.html">High Scores</a></li>
+                <li><a href="../login/index.html">Login</a></li>
+                <li><a href="../register/index.html" class="active">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="register-container">
+            <div class="register-card">
+                <div class="register-header">
+                    <h1 class="register-title">Create Account</h1>
+                    <p class="register-subtitle">Join our Sudoku community today</p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" id="username" class="form-input" placeholder="Choose a username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="Create a password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                        <input type="password" id="confirm-password" class="form-input" placeholder="Confirm your password" required>
+                    </div>
+
+                    <div class="terms-checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">
+                            I agree to the <span class="terms-link">Terms of Service</span> and <span class="terms-link">Privacy Policy</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="register-button">Create Account</button>
+
+                    <div class="form-footer">
+                        Already have an account? <a href="../login/index.html">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
