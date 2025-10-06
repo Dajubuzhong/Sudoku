@@ -160,40 +160,56 @@ button:active {
 
 @media (max-width: 768px) {
     .navbar {
-        padding: 1rem;
+        top: auto;
+        bottom: 0;
+        padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+        box-shadow: 0 -4px 20px rgba(0, 212, 255, 0.3);
+        border-bottom: none;
+        border-top: 1px solid rgba(0, 212, 255, 0.2);
     }
 
     .navbar-content {
-        flex-wrap: wrap;
-        gap: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
     }
 
     .navbar-title {
-        width: 100%;
-        text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        order: -1;
     }
 
     .navbar-links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.3rem;
         width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
+        max-width: 500px;
+    }
+
+    .navbar-links li {
+        width: 100%;
     }
 
     .navbar-links a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.85rem;
+        display: block;
+        padding: 0.5rem 0.3rem;
+        font-size: 0.7rem;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .main-container {
-        margin-top: 130px;
+        margin-top: 0;
+        margin-bottom: 110px;
         padding: 1rem;
     }
 
     .container {
-        margin-top: 130px;
+        margin-top: 0;
+        margin-bottom: 110px;
         padding: 1rem;
     }
 
@@ -211,8 +227,22 @@ button:active {
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        padding: 0.4rem 0.3rem 0.6rem 0.3rem;
+    }
+
     .navbar-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .navbar-links {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.2rem;
+    }
+
+    .navbar-links a {
+        padding: 0.4rem 0.2rem;
+        font-size: 0.65rem;
     }
 
     h1 {
@@ -225,5 +255,13 @@ button:active {
 
     .content-wrapper {
         padding: 1rem;
+    }
+
+    .main-container {
+        margin-bottom: 100px;
+    }
+
+    .container {
+        margin-bottom: 100px;
     }
 }
